@@ -57,32 +57,34 @@
     </head>
     <body>
       <header>
-          <ul class="list-header">
-            <li class="items-header"><a href="#about">About</a></li>
-            <li class="items-header"><a href="#schedule">Schedule</a></li>
-            <li class="items-header"><a href="#venue">Venue</a></li>
-            <li class="items-header"><a href="#coc">Code of Conduct</a></li>
-            <li class="items-header"><a href="#contact">Contact us</a></li>
-          </ul>
-        </header>
-        <div class="mobile-menu">
-            <div id="switch-icons" class="item"><i class="fas fa-exchange-alt"></i></div>
-            <div id="toggle-menu" class="item"><i class="fas fa-bars"></i></div>
-        </div>
-        <div class="mobile-menu-left">
-            <div class="item"><a href="#about">About</a></div>
-            <div class="item"><a href="#schedule">Schedule</a></div>
-            <div class="item"><a href="#venue">Venue</a></div>
-            <div class="item"><a href="#coc">Code of Conduct</a></div>
-            <div class="item"><a href="#contact">Contact us</a></div>
-        </div>
-        <div class="mobile-menu-right">
-            <div class="item"><a href="#about">About</a></div>
-            <div class="item"><a href="#schedule">Schedule</a></div>
-            <div class="item"><a href="#venue">Venue</a></div>
-            <div class="item"><a href="#coc">Code of Conduct</a></div>
-            <div class="item"><a href="#contact">Contact us</a></div>
-        </div>
+        <ul class="list-header">
+          <li class="items-header"><a href="#schedule">Schedule</a></li>
+          <li class="items-header"><a href="#about">About</a></li>
+          <li class="items-header"><a href="#venue">Venue</a></li>
+          <li class="items-header"><a href="#coc">Code of Conduct</a></li>
+          <li class="items-header"><a href="#contact">Contact us</a></li>
+        </ul>
+      </header>
+
+      <div class="mobile-menu">
+          <div id="switch-icons" class="item"><i class="fas fa-exchange-alt"></i></div>
+          <div id="toggle-menu" class="item"><i class="fas fa-bars"></i></div>
+      </div>
+      <div class="mobile-menu-left">
+        <div class="item"><a href="#schedule">Schedule</a></div>
+        <div class="item"><a href="#about">About</a></div>
+        <div class="item"><a href="#venue">Venue</a></div>
+        <div class="item"><a href="#coc">Code of Conduct</a></div>
+        <div class="item"><a href="#contact">Contact us</a></div>
+      </div>
+      <div class="mobile-menu-right">
+        <div class="item"><a href="#schedule">Schedule</a></div>
+        <div class="item"><a href="#about">About</a></div>
+        <div class="item"><a href="#venue">Venue</a></div>
+        <div class="item"><a href="#coc">Code of Conduct</a></div>
+        <div class="item"><a href="#contact">Contact us</a></div>
+      </div>
+
       <div class="introduction">
         <div class="opacity-layer">
           <div class="presentation">
@@ -102,11 +104,112 @@
           </div>
         </div>
       </div>
-    <section id="about">
-      <h2>WHAT IS SOCRATES?</h2>
+
+      <section id="schedule" class="schedule">
+        <h2>Schedule</h2>
+        <div class="desktop-schedule">
+          <div class="days">
+            <span class="time"></span>
+            <span><b>Thursday 25th</b></span>
+            <span><b>Friday 26th</b></span>
+            <span><b>Saturday 27th</b></span>
+            <span><b>Sunday 28th</b></span>
+          </div>
+          <div class="hour">
+            <span class="time nine-thirty">9:30</span>
+            <span class="first-day">
+              <span class="slot welcome">16:30 Welcome!</span>
+              <span class="slot lightnings">Lightning talks</span>
+            </span>
+            <span>
+              <span class="slot proposing-talks">Proposing Talks</span>
+              <span class="slot open-space"><p>Open Space</p><p>+ 2h lunch</p></span>
+            </span>
+            <span>
+                <span class="slot proposing-talks">Proposing Talks</span>
+                <span class="slot open-space"><p>Open Space</p><p>+ 2h lunch</p><p>+ retrospective</p></span>
+            </span>
+            <span class="slot"><p>Free</p><p>Have a safe trip back and see you in the next edition!</p></span>
+          </div>
+          <div class="hour">
+              <span class="time">18:30</span>
+              <span class="slot">Dinner in the hotel</span>
+              <span class="slot">Dinner out!</span>
+              <span class="slot">Dinner in the hotel</span>
+              <span></span>
+          </div>
+        </div>
+        <div class="mobile-schedule">
+          <div class="card">
+            <div class="day">Thursday 25th</div>
+            <div class="slots">
+              <div class="slot">
+                <span>16:30</span>
+                <span>Welcome!</span>
+              </div>
+              <div class="slot">
+                <span>17:00</span>
+                <span>Lightning Talks</span>
+              </div>
+              <div class="slot">
+                <span>18:30</span>
+                <span>Dinner in the hotel</span>
+              </div>
+            </div>
+          </div>
+        <div class="card">
+            <div class="day">Friday 26th</div>
+            <div class="slots">
+              <div class="slot">
+                <span>9:30</span>
+                <span>Proposing Talks</span>
+              </div>
+              <div class="slot">
+                <span>10:30</span>
+                <span>Open Space + 2h lunch</span>
+              </div>
+              <div class="slot">
+                <span>18:30</span>
+                <span>Dinner out!</span>
+              </div>
+            </div>
+          </div>
+        <div class="card">
+            <div class="day">Saturday 27th</div>
+            <div class="slots">
+                <div class="slot">
+                  <span>9:30</span>
+                  <span>Proposing Talks</span>
+                </div>
+                <div class="slot">
+                  <span>10:30</span>
+                  <span>Open Space + 2h lunch</span>
+                </div>
+                <div class="slot">
+                  <span>18:30</span>
+                  <span>Dinner out!</span>
+                </div>
+              </div>
+          </div>
+        <div class="card">
+            <div class="day">Sunday 28th</div>
+            <div class="slots last-day">
+              <div class="slot">
+                <span>Free</span>
+              </div>
+              <div class="slot">
+                <span>Have a safe trip back and see you in the next edition!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <section id="about" class="about">
+      <h2>What is Socrates?</h2>
       <ul class="list-about">
         <li class="about-items">
-          <h3 class="title-items">IT'S ABOUT PEOPLE</h3>
+          <h3 class="title-items">IT'S ABOUT <span>PEOPLE</span></h3>
           <p>
             There is no agenda and there are no speakers before the event starts.
             Proposals are presented during the event itself in the mornings, and voted by the participants right after. It’s a great opportunity to speak to and code with many like-minded and talented developers in an incredible
@@ -114,75 +217,57 @@
           </p>
         </li>
         <li class="about-items">
-          <h3 class="title-items">IT'S ABOUT ACTION</h3>
+          <h3 class="title-items">IT'S ABOUT <span>ACTION</span></h3>
           <p>
             The retreat itself is free. The only thing you pay for is the hotel, meals and meeting rooms. We will be there for 48 hours to collaborate and share ideas. There will be hands-on coding sessions, sessions focused on discussion, interactive talks and lots more.
           </p>
         </li>
         <li class="about-items">
-          <h3 class="title-items">IT'S ABOUT FUN</h3>
+          <h3 class="title-items">IT'S ABOUT <span>FUN</span></h3>
           <p>
             We will not only spend the days together but also the nights. And – believe it or not – programmers are a great company! There will be lots of opportunities to spend your time. Starting with simple chilling over hiking and biking, playing games, hanging around, talking, laughing…
           </p>
         </li>
       </ul>
     </section>
-    <section id="schedule">
-      <h2>SCHEDULE</h2>
-      <ul>
-        <li class="schedule-item">
-          <p>
-            <b>Thursday 25th:</b>
-            Welcome meeting between 16:30 and 17:00. Ligthning talks from 17:00 to 18:30. Dinner from 18:30 to 21:00
-          </p>
-        </li>
-        <li class="schedule-item">
-          <p>
-            <b>Friday 26th:</b>
-            Talks, workshops and discussions from 9:30 to 18:30 with a 2 hour lunch break. Dinner from 18:30 to 21:00.
-          </p>
-        </li>
-        <li class="schedule-item">
-          <p>
-            <b>Saturday 27th:</b>
-            Talks, workshops and discussions from 9:30 to 18:30 with a 2 hour lunch break. Dinner from 18:30 to 21:00.
-          </p>
-        </li>
-        <li class="schedule-item">
-          <p>
-            <b>Sunday 28th:</b>
-            Nothing scheduled, free time to share with your colleages.
-          </p>
-        </li>
-      </ul>
-    </section>
-    <div class="photo"></div>
-    <section id="venue">
-      <h2>VENUE</h2>
-      <p>
-        This year, once again, the conference rooms will be located in the <a href="https://www.google.es/maps/place/Hotel+NH+Imperial+Playa/@28.1486463,-15.4314489,18z/data=!4m21!1m15!4m14!1m6!1m2!1s0xc4095380b4e84f5:0x19c7dad290fed192!2sHotel+NH+Las+Palmas+Playa+Las+Canteras,+Calle+Prudencio+Morales,+41,+35009+Las+Palmas+de+Gran+Canaria,+Las+Palmas!2m2!1d-15.4306974!2d28.1490267!1m6!1m2!1s0x0:0x9dbca812ce57c97b!2sHotel+NH+Imperial+Playa!2m2!1d-15.430758!2d28.148439!3m4!1s0xc4095387ae51e8d:0x9dbca812ce57c97b!8m2!3d28.148439!4d-15.430758" target="_blank">NH Imperial Playa</a>, near the beach.
-      </p>
-      <div class="images-venue-container">
-        <img class="images-venue" src="/images/foto1.jpg" alt="">
-        <img class="images-venue" src="/images/foto3.jpg" alt="">
+
+    <section id="venue" class="venue">
+      <h2>Venue</h2>
+
+      <div class="images">
+        <div><img src="/images/foto1.jpg" alt=""></div>
+        <div><img src="/images/foto3.jpg" alt=""></div>
+      </div>
+
+      <div class="localization-container">
+        <div class="box-localization">
+          <!-- <h2 class="title-localization1">ARRIVING</h2>
+          <h2 class="title-localization2">AT THE VENUE</h2> -->
+          <div class="description">
+            <div class="place">
+              This year, once again, the conference rooms will be located in the <a href="https://www.google.es/maps/place/Hotel+NH+Imperial+Playa/@28.1486463,-15.4314489,18z/data=!4m21!1m15!4m14!1m6!1m2!1s0xc4095380b4e84f5:0x19c7dad290fed192!2sHotel+NH+Las+Palmas+Playa+Las+Canteras,+Calle+Prudencio+Morales,+41,+35009+Las+Palmas+de+Gran+Canaria,+Las+Palmas!2m2!1d-15.4306974!2d28.1490267!1m6!1m2!1s0x0:0x9dbca812ce57c97b!2sHotel+NH+Imperial+Playa!2m2!1d-15.430758!2d28.148439!3m4!1s0xc4095387ae51e8d:0x9dbca812ce57c97b!8m2!3d28.148439!4d-15.430758" target="_blank">NH Imperial Playa</a> hotel, near the beach.
+            </div>
+            <p>
+              You can get there from the<a href="https://www.google.es/maps/place/Aeropuerto+de+Gran+Canaria+(LPA)/@27.9332227,-15.3886078,15z/data=!4m5!3m4!1s0x0:0x824bcf7e159f85d4!8m2!3d27.9331848!4d-15.3877066" target="_blank"> Gran Canaria airport</a>
+              by bus, taking<a href="https://www.guaguasglobal.com/lineas-horarios/linea/?id=60" target="_blank"> route 60 to Santa Catalina</a>
+              (around 3€, the grey hours correspond to direct routes) and walk 15 minutes by the beach or take a cab (around 35-45€ depending on hours).
+            </p>
+            <p>
+              If you want to go sightseeing, you may consider renting a car since the public transportation in the city may not be as great as you would expect.
+            </p>
+          </div>
+          <div class="maps">
+              <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDBYvMbWlGsZ41-GVw2teYlkQ2_IZAfELI&q=NH+Imperial+Playa,LPA" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="localitation-container">
-      <div class="box-localitation">
-        <h2 class="title-localitation1">ARRIVING</h2>
-        <h2 class="title-localitation2">AT THE VENUE</h2>
-        <p>
-          You can get there from the<a href="https://www.google.es/maps/place/Aeropuerto+de+Gran+Canaria+(LPA)/@27.9332227,-15.3886078,15z/data=!4m5!3m4!1s0x0:0x824bcf7e159f85d4!8m2!3d27.9331848!4d-15.3877066" target="_blank"> Gran Canaria airport</a>
-           by bus, taking<a href="http://www.globalsu.net/lineas/linea60.pdf" target="_blank"> route 60 to Santa Catalina</a>
-          (around 3€, the grey hours correspond to direct routes) and walk 15 minutes by the beach or take a cab (around 35-45€ depending on hours).
-          If you want to go sightseeing, you may consider renting a car since the public transportation in the city may not be as great as you would expect.
-        </p>
-      </div>
-      <iframe
-        frameborder="0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDBYvMbWlGsZ41-GVw2teYlkQ2_IZAfELI&q=NH+Imperial+Playa,LPA" allowfullscreen>
-      </iframe>
-    </section>
+    
+
+    <div class="photo">
+      <div class="opacity-layer"></div>
+    </div>
+
     <section id="coc">
       <h2>Code of Conduct</h3>
       <p>

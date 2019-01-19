@@ -7,27 +7,28 @@
 
 a {
   text-decoration: none;
-  transition: color 0.4s ease;
-  color: #ffcd05;
-  font-size: 16px;
+  transition: color 0.2s ease;
+  color: #337ab7;
 }
 
 a:hover{
-  color: #337ab7;
+  color: rgb(0, 50, 100);
   cursor: pointer;
 }
 
 b {
-  color: #337ab7;
+  color: rgb(0, 50, 100);
 }
 
 section {
-  padding: 25px;
+  padding: 100px 200px;
 }
 
 section > h2 {
-  font-size: 24px;
-  padding: 20px;
+  font-size: 40px;
+  padding-bottom: 75px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 header {
@@ -43,31 +44,9 @@ header a {
   color: white;
 }
 
-header.expanded {
-  height: 250px;
-  transition: 0.5s height;
-}
-
-header.expanded .logo-container {
-  border-color: #797979;
-}
-
-header:not(.expanded) .list-header {
-  display: none;
-}
-
-#toggle {
-  display: block;
-  height: 30px;
-  width: 30px;
-}
-
-#toggle > div {
-  width: 35px;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #fff;
-  margin: 6px 0;
+header a:hover{
+  color: #ffcd05;
+  cursor: pointer;
 }
 
 .list-header{
@@ -147,7 +126,7 @@ header:not(.expanded) .list-header {
   font-size: 24px;
 }
 
-#about {
+.about {
   background-image: url(/images/image-about-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -155,97 +134,191 @@ header:not(.expanded) .list-header {
   text-align: center;
 }
 
+.about h2 {
+  color: #ffcd05;
+}
+
 .list-about{
   display: flex;
-  flex-direction: column;
   list-style: none;
 }
 
 .about-items{
-  padding: 20px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.about-items p {
+  text-align: justify;
 }
 
 .title-items{
   padding-bottom: 16px;
+  text-align: left;
+  font-size: 20px;
 }
 
-#schedule {
+.title-items span {
+  color: #ffcd05;
+  font-size: 26px;
+}
+
+.schedule {
+  color: black;
+  background-color: white;
+  font-size: 18px;
+}
+
+.schedule h2 {
+  color: rgb(0, 50, 100);
+}
+
+.schedule .days {
+  display: flex;
+  padding: 20px;
+  border: 1px solid rgb(0, 50, 100);
   text-align: center;
+}
+
+.schedule .days span {
+  flex-basis: 22%;
+}
+
+.schedule .days .time {
+  flex-basis: 12%;
+}
+
+.schedule .hour {
+  display: flex;
+  text-align: center;
+  border: 1px solid rgb(0, 50, 100);
+  border-top: none;
+}
+
+.schedule .hour span {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 22%;
+}
+
+.schedule .hour .time {
+  padding: 20px;
+  flex-basis: 12%;
+}
+
+.hour .time.nine-thirty {
+  padding-bottom: 200px;
+}
+
+.schedule .hour .first-day {
+  justify-content: flex-end;
+}
+
+.schedule .hour .slot {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.schedule .hour .welcome {
+  flex-basis: 15%;
+  border-bottom: 1px solid rgba(0, 50, 100, 0.5);
+}
+
+.schedule .hour .lightnings {
+  flex-basis: 25%;
+}
+
+.schedule .hour .proposing-talks {
+  flex-basis: 20%;
+  border-bottom: 1px solid rgba(0, 50, 100, 0.5);
+}
+
+.schedule .hour .open-space {
+  flex-basis: 80%;
+}
+
+.schedule .hour .lunch {
+  flex-basis: 20%;
+  border-bottom: 1px solid rgba(0, 50, 100, 0.5);
+}
+
+.venue {
+  display: flex;
+  flex-direction: column;
   color: #111;
-  margin: 0 auto;
-  background-color: #eeeeee;
-  margin: 0 auto;
+  text-align: center;
 }
 
-#schedule > ul {
-  padding: 0 30px 30px 30px;
+.venue h2 {
+  color: rgb(0, 50, 100);
 }
 
-.schedule-item{
-  display: block;
-  padding: 15px;
-  margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  font-size: 14px;
+.venue p {
+  margin-bottom: 18px;
 }
 
-.photo{
+.venue .images {
+  display: flex;
+}
+
+.venue .images div {
+  margin: 12px;
+}
+
+.venue .images img {
+  width: 100%;
+}
+
+.venue .localization-container {
+  display: flex;
+  padding-top: 30px;
+}
+
+.venue .localization-container .box-localization {
+  display: flex;
+}
+
+.venue .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 60%;
+  text-align: left;
+  padding: 30px 30px 30px 12px;
+}
+
+.venue .description .place {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.venue .description p {
+  font-size: 18px;
+}
+
+.venue .maps {
+  flex-basis: 40%;
+  padding-right: 12px;
+}
+
+.venue .maps iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.photo {
   background-image: url(/images/foto4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 40vh;
+  height: 50vh;
 }
 
-#venue {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  color: #111;
-  text-align: center;
-}
-
-#venue > p {
-  margin-bottom: 18px;
-}
-
-.images-venue{
-  width: 90%;
-  padding: 10px;
-}
-
-.images-venue-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tickets {
-  background-color: #222324;
-  color: #ffffff;
-}
-
-.localitation-container{
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-}
-
-.box-localitation{
-  padding-bottom: 32px;
-}
-
-.title-localitation1{
-  color: #111;
-}
-
-.title-localitation2{
-  color: #8c8c8c;
-  padding-left: 30px;
-  padding-bottom: 15px;
+.photo .opacity-layer {
+  background: rgba(0, 25, 50, 0.8);
+  width: 100%;
+  height: 100%;
 }
 
 #coc blockquote {
@@ -257,7 +330,7 @@ header:not(.expanded) .list-header {
   margin: 12px 0;
 }
 
-footer{
+footer {
   background-color: #111;
   color: white;
   display: flex;
@@ -269,7 +342,15 @@ footer > div:not(:first-child) {
   padding-top: 32px;
 }
 
-.titles-footer{
+footer a {
+  color: #ffcd05;
+}
+
+footer a:hover {
+  color: #337ab7;
+}
+
+.titles-footer {
   text-align: center;
   padding-bottom: 10px;
   font-size: 18px;
@@ -319,10 +400,27 @@ footer > div:not(:first-child) {
   padding-top: 12px;
 }
 
+@media all and (max-width: 1440px) {
+
+  section {
+    padding: 80px 50px;
+  }
+
+}
+
 @media all and (max-width: 1200px) {
+
+  section {
+    padding: 80px 20px;
+  }
 
   .introduction .presentation {
     padding-left: 150px;
+  }
+
+  .introduction .presentation {
+    align-items: center;
+    padding: 100px 20px;
   }
     
   .introduction .presentation .event-name {
@@ -344,12 +442,83 @@ footer > div:not(:first-child) {
   .introduction .presentation .title .dates {
     font-size: 35px;
   }
+
+  .schedule .desktop-schedule {
+    display: none;
+  }
+
+  .schedule .mobile-schedule {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .schedule .card {
+    flex-basis: 40%;
+    margin: 20px;
+    border: 1px solid rgb(0, 50, 100);
+  }
+
+  .schedule .card .day {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(0, 50, 100);
+  }
+
+  .schedule .slots {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .schedule .slots .slot {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0 18px 0;
+    border-bottom: 1px solid rgba(0, 50, 100, 0.2);
+  }
+
+  .schedule .slots .slot:last-of-type {
+    padding-bottom: 7px;
+    border-bottom: none;
+  }
+
+  .schedule .slots.last-day .slot {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .list-about {
+    flex-wrap: wrap;
+  }
 }
 
-@media all and (max-width: 1200px) {
-  .introduction .presentation {
-    align-items: center;
-    padding: 100px 20px;
+@media all and (max-width: 920px) {
+
+  .venue .localization-container .box-localization {
+    flex-wrap: wrap;
+  }
+
+  .venue .description {
+    flex-basis: 100%;
+    padding: 0 12px 20px 12px;
+  }
+
+  .venue .description .place {
+    font-size: 19px;
+  }
+
+  .venue .description p {
+    font-size: 17px;
+  }
+
+  .venue .maps {
+    flex-basis: 100%;
+    padding: 0 12px;
+  }
+
+  .venue .maps iframe {
+    height: 210px;
   }
 }
 
@@ -357,6 +526,14 @@ footer > div:not(:first-child) {
 
   header {
     display: none;
+  }
+  
+  section {
+    padding: 60px 10px;
+  }
+
+  section h2 {
+    padding-bottom: 50px;
   }
 
   .mobile-menu {
@@ -466,6 +643,26 @@ footer > div:not(:first-child) {
   .introduction .presentation .title .dates {
     font-size: 20px;
   }
+
+  .schedule .card {
+    flex-basis: 100%;
+  }
+
+  .about .about-items {
+    padding: 25px 20px;
+  }
+
+  .about .about-items .title-items {
+    text-align: center;
+  }
+
+  .about .list-about {
+    flex-wrap: wrap;
+  }
+
+  .venue .images div:last-of-type {
+    display: none;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -495,15 +692,6 @@ footer > div:not(:first-child) {
     display: none;
   }
 
-  section > h2 {
-    font-size: 30px;
-    padding: 20px 0;
-  }
-
-  #toggle {
-    display: none;
-  }
-
   header .list-header {
     border: none;
     display: flex !important;
@@ -522,7 +710,7 @@ footer > div:not(:first-child) {
     display: none;
   }
 
-  #about {
+  .about {
     background-image: url(/images/image-section-about.png);
     background-repeat: no-repeat;
   }
@@ -531,33 +719,6 @@ footer > div:not(:first-child) {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-
-  .images-venue{
-    width: 40%;
-    height: 290px;
-  }
-
-  .images-venue-container{
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .localitation-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 40px;
-  }
-
-  .box-localitation {
-    padding-right: 55px;
-  }
-
-  iframe{
-    width: 500px;
-    height: 250px;
-    border: 0;
   }
 
   footer{
@@ -572,5 +733,12 @@ footer > div:not(:first-child) {
 
   #contact{
     padding-top: 0px;
+  }
+}
+
+@media all and (min-width: 1201px) {
+
+  .mobile-schedule {
+    display: none;
   }
 }
