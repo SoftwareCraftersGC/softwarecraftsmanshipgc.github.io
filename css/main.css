@@ -759,6 +759,10 @@ footer a:hover {
   .code-of-conduct p {
     padding: 0 20px;
   }
+
+  footer {
+    padding-bottom: 80px;
+  }
 }
 
 @media all and (min-width: 768px) {
