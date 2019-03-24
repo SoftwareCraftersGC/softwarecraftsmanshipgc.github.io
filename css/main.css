@@ -243,6 +243,31 @@ header a:hover{
   border-bottom: 1px solid rgba(0, 50, 100, 0.5);
 }
 
+.sponsors {
+  margin: 20px 0;
+}
+
+.sponsors .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsors .logos .logo {
+  display: flex;
+  justify-content: center;
+  flex-basis: 25%;
+  min-width: 300px;
+  height: 200px;
+  padding: 30px;
+}
+
+.sponsors .logos .logo img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
 .venue {
   display: flex;
   flex-direction: column;
