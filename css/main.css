@@ -346,13 +346,14 @@ header a:hover{
   height: 100%;
 }
 
-#coc blockquote {
-  background-color: #eee;
-  padding: 18px;
+.code-of-conduct h2 {
+  color: rgb(0, 50, 100);
+}
+
+.code-of-conduct p {
+  font-size: 18px;
   text-align: justify;
-  border-radius: 10px;
-  border: 1px solid #bbb;
-  margin: 12px 0;
+  margin-bottom: 15px;
 }
 
 footer {
