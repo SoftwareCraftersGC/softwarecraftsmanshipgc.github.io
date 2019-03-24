@@ -337,7 +337,6 @@ header a:hover{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 50vh;
 }
 
 .photo .opacity-layer {
@@ -347,13 +346,23 @@ header a:hover{
 }
 
 .code-of-conduct h2 {
-  color: rgb(0, 50, 100);
+  color: #ffcd05;
+  transition: color 0.2s ease;
+}
+
+.code-of-conduct a {
+  color: #ffcd05;
+}
+
+.code-of-conduct a:hover {
+  color: #ffee50;
 }
 
 .code-of-conduct p {
+  color: white;
   font-size: 18px;
   text-align: justify;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 footer {
