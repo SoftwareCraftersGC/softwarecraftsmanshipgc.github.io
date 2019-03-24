@@ -332,14 +332,14 @@ header a:hover{
   height: 100%;
 }
 
-.photo {
+.code-of-conduct-background {
   background-image: url(/images/foto4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.photo .opacity-layer {
+.code-of-conduct-background .opacity-layer {
   background: rgba(0, 25, 50, 0.8);
   width: 100%;
   height: 100%;
@@ -363,6 +363,81 @@ header a:hover{
   font-size: 18px;
   text-align: justify;
   margin-bottom: 30px;
+}
+
+.organization {
+  color: rgb(0, 50, 100);
+}
+
+.organization .photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.organization .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 25%;
+  max-width: 300px;
+  min-width: 200px;
+  padding: 30px;
+}
+
+.organization .details .photo img {
+  border: 4px solid rgba(0, 50, 100, 0.75);
+  border-radius: 100%;
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
+.organization .details p {
+  padding-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.organization .facilitator {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.organization .facilitator .state {
+  flex-basis: 25%;
+  font-size: 18px;
+  max-width: 300px;
+  min-width: 200px;
+  padding: 30px;
+  color: black;
+}
+
+.organization .facilitator .details {
+  flex-basis: 25%;
+}
+
+.organization .facilitator .details .photo img {
+  border: 4px solid rgba(255, 147, 5, 0.75);
+}
+
+.organization a {
+  color: rgba(0, 50, 100);
+}
+
+.organization a:hover {
+  color: rgba(0, 50, 100, 0.5);
+}
+
+.organization .facilitator a {
+  color: rgb(255, 147, 5);
+}
+
+.organization .facilitator a:hover {
+  color: rgba(255, 147, 5, 0.75);
 }
 
 footer {
@@ -395,24 +470,6 @@ footer a:hover {
   width: 100px;
   display: flex;
   margin: 0 auto;
-}
-
-.facilitator {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.facilitator a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.facilitator img {
-  width: 80px;
-  border-radius: 100%;
-  margin: 12px auto;
 }
 
 #contact {
@@ -697,6 +754,10 @@ footer a:hover {
 
   .venue .images div:last-of-type {
     display: none;
+  }
+
+  .code-of-conduct p {
+    padding: 0 20px;
   }
 }
 
