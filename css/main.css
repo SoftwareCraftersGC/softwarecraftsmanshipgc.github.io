@@ -332,6 +332,30 @@ header a:hover{
   height: 100%;
 }
 
+.concert {
+  margin-top: 100px;
+}
+
+.concert h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.concert b {
+  color: black;
+}
+
+.concert .presentation {
+  font-size: 22px;
+  margin-bottom: 60px;
+}
+
+.concert video {
+  width: 100%;
+  max-width: 1080px;
+}
+
 .code-of-conduct-background {
   background-image: url(/images/foto4.jpg);
   background-repeat: no-repeat;
@@ -755,6 +779,15 @@ footer a:hover {
     display: none;
   }
 
+  .concert h2 {
+    padding-bottom: 0px;
+  }
+  
+  .concert .presentation {
+    font-size: 19px;
+    margin-bottom: 40px;
+  }
+  
   .code-of-conduct p {
     padding: 0 20px;
   }
